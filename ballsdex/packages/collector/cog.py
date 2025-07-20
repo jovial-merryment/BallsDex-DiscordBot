@@ -29,18 +29,18 @@ if TYPE_CHECKING:
 # You must be have version 2.22.0 Ballsdex or diamond will not work.
 
 # AMOUNT NEEDED FOR TOP 1 CC BALL e.g. reichtangle
-T1Req = 70
+T1Req = 5
 
 # RARITY OF TOP 1 BALL e.g. reichtangle
 # (If not originally inputted as 1 into admin panel or /admin balls create)
-T1Rarity = 0.01
+T1Rarity = 1
 
 # AMOUNT NEEDED FOR **MOST** COMMON CC BALL e.g. djibouti
-CommonReq = 750
+CommonReq = 120
 
 # RARITY OF MOST COMMON BALL e.g. djibouti
 # (Which was originally inputted into admin panel or /admin balls create)
-CommonRarity = 0.121
+CommonRarity = 24
 
 # ROUNDING OPTION FOR AMOUNTS NEEDED, WHAT YOU WOULD LIKE EVERYTHING TO ROUNDED TO
 # e.g. Putting 10 makes everything round to the nearest 10, cc reqs would look something like:(100,110,120,130,140,150 etc)
@@ -48,16 +48,16 @@ CommonRarity = 0.121
 # e.g. Putting 20 looks like: (100,120,140,160,180,200 etc)
 # 1 is no rounding and looks like: (100,106,112,119,127 etc)
 # however you are not limited to these numbers, I think Ballsdex does 50
-RoundingOption = 10
+RoundingOption = 5
 # WARNINGS:
 # if T1Req/CommonReq is not divisible by RoundingOption they will be affected.
 # if T1Req is less than RoundingOption it will be rounded down to 0, (That's just how integer conversions work in python unfortunately)
 
 #Same thing but for diamond
 dT1Req = 3
-dT1Rarity = 0.01 # this must be the same as T1Rarity, dont make it different unless you know what you're doing
-dCommonReq = 12
-dCommonRarity = 0.121 # this must be the same as CommonRarity, dont make it different unless you know what you're doing
+dT1Rarity = 1 # this must be the same as T1Rarity, dont make it different unless you know what you're doing
+dCommonReq = 72
+dCommonRarity = 24 # this must be the same as CommonRarity, dont make it different unless you know what you're doing
 dRoundingOption = 1
 
 
